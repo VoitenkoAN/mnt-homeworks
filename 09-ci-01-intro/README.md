@@ -41,4 +41,9 @@
 
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
+![1](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/b4199ada-017f-4f5e-95db-9944d8ee8eba)
+
+![2](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/06b5a30f-6fd9-4ac4-b64b-34b5cceaa69c)
+
+
 ---

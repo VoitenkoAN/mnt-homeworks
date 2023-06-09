@@ -10,15 +10,32 @@
 
 1. Попробуйте запустить playbook на окружении из `test.yml`, зафиксируйте значение, которое имеет факт `some_fact` для указанного хоста при выполнении playbook.
 2. Найдите файл с переменными (group_vars), в котором задаётся найденное в первом пункте значение, и поменяйте его на `all default fact`.
+
+![img1](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/bfc2d16a-fe48-4f0b-8a86-7eb509dcdc8e)
+
 3. Воспользуйтесь подготовленным (используется `docker`) или создайте собственное окружение для проведения дальнейших испытаний.
 4. Проведите запуск playbook на окружении из `prod.yml`. Зафиксируйте полученные значения `some_fact` для каждого из `managed host`.
+
+![img4](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/3c5a6298-37dd-49be-98ec-fcd43791e976)
+
 5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 6.  Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
+
+![img5](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/1f9c6be8-2a9c-4778-8a7c-3d2592bc86d7)
+
+
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
+
+![img7](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/c74ebc52-fbbc-4e3d-b812-2ffd5246ac7b)
+
+
 9. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
 10. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
 11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
+
+![img10](https://github.com/VoitenkoAN/mnt-homeworks/assets/110226611/6290a457-7c38-4c9e-978f-ba690806d39f)
+
 12. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
 
 ## Необязательная часть
